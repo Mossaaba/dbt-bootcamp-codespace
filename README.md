@@ -80,3 +80,22 @@ An architectural pattern that prevents a system from being polluted by external 
 ### + of materilaized : is not sub folder but if the built-in fonctionality of DBT 
 
 ### dbt run --full-refresh (Rebuild table from scartch for incrematel )
+
+
+-- 
+## snapshot 
+A dbt snapshot captures and tracks historical changes to records in a source table over time.
+It lets you detect updates (like field changes) and keep a history of how data looked at different points.
+
+Imagine you track customer addresses — when a customer moves, a dbt snapshot saves both the old and new addresses, so you always know where they lived at any point in time.
+-- 
+## Tets 
+
+### Genric test : predifined in schema.yml (unique , NotNull, Accepted Value )
+### Singular test : defined in the folder tests (SQL request)
+
+
+## Docs 
+
+dbt docs generate 
+dbt docs serve 

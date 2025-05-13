@@ -1,0 +1,16 @@
+version: 2
+
+exposures:
+  - name: Executive Dashboard
+    type: dashboard
+    maturity: low
+    url: https://ea24dfbe.us2a.app.preset.io/superset/dashboard/p/k2xVdn37eLR/
+    description: Executive Dashboard about Airbnb listings and hosts
+    
+    depends_on:
+      - ref('dim_listings_w_hosts')
+      - ref('mart_full_moon_reviews')
+    
+    owner:
+      name: Salah Eddine aid
+      email: salaheddine.aidoud.contact@gmail.com
